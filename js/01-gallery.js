@@ -39,6 +39,8 @@ imagesContainer.addEventListener("click", (eve) => {
   const instance = basicLightbox.create(`
   <img src="${urlBigImage}" width="800" heigth="600">`);
 
+  
   instance.show();
 
 });
+

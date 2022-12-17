@@ -36,9 +36,8 @@ imagesContainer.addEventListener("click", (eve) => {
 
   const urlBigImage = eve.target.getAttribute("data-source");
 
-  const instance = bacisLightbox.create(`
-  <img src="${urlBigImage}" width="800" heigth="600">
-  `);
+  const instance = basicLightbox.create(`
+  <img src="${urlBigImage}" width="800" heigth="600">`);
 
   instance.show();
 

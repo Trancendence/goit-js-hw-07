@@ -1,7 +1,7 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-console.log(galleryItems);
+// console.log(galleryItems);
 
 
 const imagesContainer = document.querySelector('.gallery')
@@ -24,19 +24,6 @@ function createPictureGallery(galleryItems) {
   })
   .join("");
 }
-
-imagesContainer.addEventListener("click", (eve) => {
-  eve.preventDefault();
-
-  // if not a picture - exit
-
-  if (eve.target.nodeName !== "IMG") {
-    return;
-  }
-
-
-});
-
 
 new SimpleLightbox('.gallery a', {
     captions: true,
